@@ -9,7 +9,6 @@ import { AuroraText } from "@/components/ui/aurora-text";
 import Link from "next/link";
 import Image from "next/image";
 import { InteractiveHoverButton } from "./ui/interactive-hover-button";
-import { Backlight } from "./ui/backlight";
 import { FaApple, FaGooglePlay } from "react-icons/fa";
 
 export function Hero() {
@@ -18,7 +17,7 @@ export function Hero() {
       <div className="container px-4 md:px-6 flex flex-col items-center text-center space-y-6 relative z-10">
         <BlurFade delay={0.05}>
           {siteConfig.appIcon && (
-            <Backlight blur={40}>
+            
               <div className="relative h-18 w-18 md:h-22 md:w-22 overflow-hidden rounded-[25%]">
                 <Image
                   src={siteConfig.appIcon}
@@ -27,7 +26,7 @@ export function Hero() {
                   className="object-cover"
                 />
               </div>
-            </Backlight>
+            
           )}
         </BlurFade>
 
