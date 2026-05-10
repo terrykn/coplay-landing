@@ -109,7 +109,10 @@
       { "label": "Terms of Service", "href": "/terms" }
     ],
     "socials": [
-
+      {
+        "icon": "FaGithub",
+        "link": "https://github.com"
+      },
     ],
     "copyright": "© 2026 Terry Nguyen. All rights reserved."
   }
