@@ -1,105 +1,74 @@
 {
-  "name": "Reminders",
-  "theme": "system",
+  "name": "CoPlay",
+  "theme": "dark",
   "appIcon": "/icon.png",
   "logo": {
-    "text": "Reminders"
+    "text": "CoPlay"
   },
   "hero": {
-    "headline": "Don't forget. Use Reminders",
-    "subheadline": "Track life's to-dos, from grocery lists to work projects. With iCloud, your tasks stay in sync across all your devices.",
-    "cta": "Download",
-    "showWaitlist": false,
-    "showApple": true,
-    "showAndroid": true,
-    "appleLink": "https://apps.apple.com/us/app/reminders/id1108187841",
+    "headline": "Watch & listen together",
+    "subheadline": "Free forever, no interruptions. The perfect music experience for friends, where everyone gets a turn at the queue.",
+    "cta": "Join Waitlist",
+    "showWaitlist": true,
+    "showApple": false,
+    "showAndroid": false,
+    "appleLink": "https://apps.apple.com",
     "androidLink": "https://play.google.com",
-    "showCount": "users",
-    "waitlistCount": 2400,
-    "userCount": 5000000,
+    "showCount": "waitlist",
+    "waitlistCount": 1000,
+    "userCount": 0,
     "userCountLabel": "users",
     "primaryScreenshot": "/screenshots/main-screen.png",
     "secondaryScreenshot": "/screenshots/secondary-screen.png",
     "tertiaryScreenshot": "/screenshots/tertiary-screen.png"
   },
   "pricing": {
-    "title": "Plans",
-    "subtitle": "Choose the plan that's right for you.",
+    "title": "Pricing",
+    "subtitle": "Flexible plans for every music lover.",
     "tiers": [
       {
-        "name": "Personal",
+        "name": "Free",
         "price": "$0",
-        "description": "Perfect for keeping track of your daily life.",
-        "features": ["Smart Lists", "iCloud Sync", "Siri Integration"],
+        "description": "",
+        "features": ["Unlimited watching and listening", "Custom playlists", "Parties with up to 3 others"],
         "cta": "Get Started",
         "highlighted": false
       },
       {
         "name": "Pro",
-        "price": "$9",
-        "description": "Enhanced features for power users.",
-        "features": ["Custom Templates", "Advanced Smart Lists", "Location Triggers", "Priority Support"],
+        "price": "$4.99",
+        "description": "",
+        "features": ["Everything in Free", "No ads", "Parties with up to 32"],
         "cta": "Go Pro",
         "highlighted": true
-      },
-      {
-        "name": "Family",
-        "price": "$15",
-        "description": "Collaborate with your entire household.",
-        "features": ["Shared Lists", "Task Assignment", "Family Sharing", "Up to 6 users"],
-        "cta": "Start Trial",
-        "highlighted": false
-      }
-    ]
-  },
-  "features": {
-    "title": "Built for productivity",
-    "items": [
-      {
-        "title": "Smart Organization",
-        "description": "Smart Lists automatically group your to-dos. Use Apple Intelligence to auto-categorize lists into sections and column views.",
-        "icon": "ListTodo"
-      },
-      {
-        "title": "Powerful Intelligence",
-        "description": "Natural language support lets you type phrases like 'Jog every other morning' to create recurring reminders instantly.",
-        "icon": "Brain"
-      },
-      {
-        "title": "Contextual Triggers",
-        "description": "Set reminders for specific locations like 'when I arrive at home' or even 'the next time I chat with someone' in Messages.",
-        "icon": "MapPin"
-      },
-      {
-        "title": "Seamless Collaboration",
-        "description": "Share lists and assign tasks to others. Everyone with access can add, edit, or complete reminders in real-time.",
-        "icon": "Users"
       }
     ]
   },
   "gallery": {
-    "title": "Experience it yourself",
-    "subtitle": "Be reminded when and how you want",
+    "title": "Music without limits",
+    "subtitle": "Find songs, create your own playlists, shared queues, and more.",
     "screenshots": [
-      { "url": "/screenshots/screen-1.png", "label": "Home" },
-      { "url": "/screenshots/screen-2.png", "label": "Smart Widgets" },
-      { "url": "/screenshots/screen-3.png", "label": "Grocery Lists" },
-      { "url": "/screenshots/screen-4.png", "label": "Shared Tasks" },
-      { "url": "/screenshots/screen-5.png", "label": "Lists" }
+      { "url": "/screenshots/screen-1.png", "label": "Shared Queues" },
+      { "url": "/screenshots/screen-2.png", "label": "Custom Playlists" },
+      { "url": "/screenshots/screen-3.png", "label": "Watch Videos" },
+      { "url": "/screenshots/screen-4.png", "label": "Find Music" },
+      { "url": "/screenshots/screen-5.png", "label": "Your Favorite Artists" },
+      { "url": "/screenshots/screen-6.png", "label": "Lyrics" }
     ]
   },
   "howItWorks": {
-    "title": "Fast and easy to use",
+    "title": "Music for every moment",
     "steps": [
-      { "label": "Smart Lists", "description": "Quickly add tasks and reminders to your lists." },
-      { "label": "Stay Notified", "description": "Set reminders and stay on track." },
-      { "label": "Collaborate", "description": "Share and collaborate on a list with others." }
+      { "label": "Music is better together", "description": "Share music with friends, where everyone can add songs to the queue." },
+      { "label": "Customize your playlists", "description": "Make playlists for every moment. Save albums you love." },
+      { "label": "No interruptions", "description": "Watch and listen without limits." },
+      { "label": "All the songs you need", "description": "Find your favorite music videos, songs, and artists." }
     ]
   },
   "waitlist": {
     "anchor": "waitlist",
-    "title": "Be first in line",
-    "subtitle": "Join millions of users staying organized with Reminders.",
+    "title": "Join our waitlist",
+    "subtitle": "Be the first to try out CoPlay when we release our beta.",
     "iframeUrl": "https://a1a7a1f5.sibforms.com/serve/MUIFAEzzQF3-xB_Ixx4VzU7mQ-YUJjK4RT1HdXDi8Epvc1WSqKIaRtVHeGeUUIFQ9Rqnfm0HmT4ptPZSYT8iCvM1qI16kAzUS4KDZQyuMt7-VcrK4iZAi0zPF7zExPjvT6BY7rov-k5yZxX6Gt6geGKykIiOqkiJWNBwHZ15BhYvFHwJw5rmqseKs6kNegEGoHIi-V4rRASwkfGkJQ==",
     "successMessage": "You're on the list! Check your email soon.",
     "disclaimer": "No spam. Unsubscribe anytime."
@@ -108,39 +77,40 @@
     "title": "Frequently Asked Questions",
     "items": [
       {
-        "question": "Does it sync across all my devices?",
-        "answer": "Yes, with iCloud, all your reminders stay in sync across iPhone, iPad, Mac, Apple Watch, and Apple Vision Pro automatically."
+        "question": "Is CoPlay really free?",
+        "answer": "Yes! CoPlay is free to use. We offer a Pro plan for users who want to host larger parties and enjoy an ad-free experience, but the core features will always be free."
       },
       {
-        "question": "Can I use Siri to create reminders?",
-        "answer": "Absolutely. You can use Siri to create reminders with your voice, or use natural language typing within the app."
+        "question": "How do shared queues work?",
+        "answer": "Once you start a party, you can share a code with your friends. You can control whether you want others to add, reorder, or remove songs from the queue."
       },
       {
-        "question": "Can I collaborate with others?",
-        "answer": "Yes, you can share lists with others and assign specific reminders to people you're collaborating with."
+        "question": "Do I need to sign up and create an account?",
+        "answer": "Nope! We want to make the experience as easy as possible for you. You can choose to sign up if you want to save your playlists to use across devices or host parties."
       }
     ]
   },
+  "legal": {
+    "privacy": {
+      "title": "Privacy Policy",
+      "lastUpdated": "May 9, 2026",
+      "content": "# Privacy Policy\n\nLast updated: May 9, 2026\n\n## 1. Introduction\nAt CoPlay, we are committed to protecting your privacy. This policy explains how we handle your data when you use the CoPlay app and ourservices.\n\n## 2. Data We Collect\nCoPlay collects minimal data to provide our services. This may include your email address, name, saved playlists, and saved albums upon optional account creation, and your email address if you choose to join our waitlist.\n\n## 3. Shared Queues and Parties\nWhen you join or host a party, your interactions with the queue (such as adding or removing songs) are visible to other participants in that session. We do not store private listening history beyond the duration of the party session.\n\n## 4. Third-Party Services\nCoPlay may integrate with third-party music and video providers, such as YouTube. Your use of these services through CoPlay is also subject to their respective privacy policies. We do not share your personal account credentials with these providers.\n\n## 5. Waitlist Information\nFor users joining our waitlist, we collect your email address solely to provide updates on app availability and beta testing opportunities. We do not sell or share this information with third parties.\n\n## 6. Data Security\nWe use industry-standard encryption and security measures to protect your data during transit and at rest. However, no method of transmission over the internet is 100% secure, and we cannot guarantee absolute security.\n\n## 7. Your Choices\nYou can manage your data by editing your playlists or deleting your account. You can also unsubscribe from our waitlist communications at any time using the link provided in our emails."
+    },
+    "terms": {
+      "title": "Terms of Service",
+      "lastUpdated": "May 9, 2026",
+      "content": "# Terms of Service\n\nLast updated: May 9, 2026\n\n## 1. Acceptance of Terms\nBy using the CoPlay application or website, you agree to these Terms of Service. If you do not agree, please do not use our services.\n\n## 2. Use of Service\nYou are responsible for any content you share or interactions you have within CoPlay. You must not use the service for any illegal or unauthorized purposes. For party features, you agree to behave respectfully towards other participants.\n\n## 3. Intellectual Property\nAll software, designs, and brand assets associated with CoPlay are the exclusive property of CoPlay and its licensors. You retain ownership of any playlists you create, but grant us a license to host and display them as part of the service.\n\n## 4. Third-Party Content\nCoPlay allows you to access content from third-party providers. We do not own this content and are not responsible for its availability or accuracy. You agree to comply with the terms of use of any third-party providers you access through our service.\n\n## 5. Termination\nWe reserve the right to suspend or terminate your access to the service at any time, without notice, for conduct that we believe violates these terms or is harmful to other users or our business interests.\n\n## 6. Disclaimer of Warranties\nThe service is provided \"as is\" without any warranties of any kind. We do not guarantee that the service will be uninterrupted or error-free.\n\n## 7. Changes to Terms\nWe may update these terms from time to time. Your continued use of the service after such changes constitutes your acceptance of the new terms."
+    }
+  },
   "footer": {
-    "tagline": "The easiest way to stay organized.",
+    "tagline": "Watch & listen together",
     "links": [
       { "label": "Privacy Policy", "href": "/privacy" },
       { "label": "Terms of Service", "href": "/terms" }
     ],
     "socials": [
-      {
-        "icon": "FaTwitter",
-        "link": "https://twitter.com"
-      },
-      {
-        "icon": "FaGithub",
-        "link": "https://github.com"
-      },
-      {
-        "icon": "FaYoutube",
-        "link": "https://youtube.com"
-      }
+
     ],
-    "copyright": "© 2026 Reminders Inc. All rights reserved."
+    "copyright": "© 2026 Terry Nguyen. All rights reserved."
   }
 }

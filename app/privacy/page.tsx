@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { ChevronLeft } from "lucide-react";
 import { siteConfig } from "@/lib/site-config";
+import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
 
 export default function PrivacyPage() {
   return (
@@ -11,39 +13,27 @@ export default function PrivacyPage() {
           <span>Back to Home</span>
         </Link>
         
-        <article className="prose prose-invert lg:prose-xl">
-          <h1 className="text-4xl font-bold mb-8">Privacy Policy</h1>
-          <p className="text-muted-foreground">Last updated: May 9, 2026</p>
-          
-          <section className="space-y-4">
-            <h2 className="text-2xl font-bold mt-8">1. Introduction</h2>
-            <p>At {siteConfig.name}, we are committed to protecting your privacy. This policy explains how we handle your data when you use the {siteConfig.name} app and our synchronization services.</p>
-          </section>
-
-          <section className="space-y-4">
-            <h2 className="text-2xl font-bold mt-8">2. Data Synchronization and iCloud</h2>
-            <p>{siteConfig.name} uses iCloud to keep your reminders in sync across all your devices. Your data is stored in your private iCloud database and is not accessible by us. Encryption ensures that your tasks, lists, and attachments remain secure during transit and while at rest.</p>
-          </section>
-
-          <section className="space-y-4">
-            <h2 className="text-2xl font-bold mt-8">3. Location-Based Reminders</h2>
-            <p>If you choose to use location-based reminders, {siteConfig.name} will access your location data. This information is processed locally on your device to trigger notifications when you arrive at or leave a specific place. We do not track or store your location history on our servers.</p>
-          </section>
-
-          <section className="space-y-4">
-            <h2 className="text-2xl font-bold mt-8">4. Collaboration and Shared Lists</h2>
-            <p>When you share a list with others, participants can see the reminders, subtasks, and attachments within that list. Your name and contact information associated with your account may be visible to other participants in the shared list to facilitate collaboration.</p>
-          </section>
-
-          <section className="space-y-4">
-            <h2 className="text-2xl font-bold mt-8">5. Waitlist Information</h2>
-            <p>For users joining our waitlist, we collect your email address solely to provide updates on app availability and beta testing opportunities. We do not sell or share this information with third parties.</p>
-          </section>
-
-          <section className="space-y-4">
-            <h2 className="text-2xl font-bold mt-8">6. Your Choices</h2>
-            <p>You can manage your data by editing or deleting reminders directly in the app. You can also disable iCloud sync or location permissions in your device settings at any time.</p>
-          </section>
+        <article className="max-w-none">
+          <ReactMarkdown
+            remarkPlugins={[remarkGfm]}
+            components={{
+              h1: ({ ...props }) => <h1 className="text-4xl font-bold mb-8 text-foreground" {...props} />,
+              h2: ({ ...props }) => <h2 className="text-2xl font-bold mt-12 mb-4 text-foreground border-b pb-2" {...props} />,
+              h3: ({ ...props }) => <h3 className="text-xl font-bold mt-8 mb-3 text-foreground" {...props} />,
+              p: ({ ...props }) => <p className="text-muted-foreground leading-relaxed mb-4" {...props} />,
+              ul: ({ ...props }) => <ul className="list-disc pl-6 mb-4 space-y-2 text-muted-foreground" {...props} />,
+              ol: ({ ...props }) => <ol className="list-decimal pl-6 mb-4 space-y-2 text-muted-foreground" {...props} />,
+              li: ({ ...props }) => <li {...props} />,
+              blockquote: ({ ...props }) => <blockquote className="border-l-4 border-primary pl-4 italic my-4 text-muted-foreground" {...props} />,
+              code: ({ ...props }) => <code className="bg-muted px-1.5 py-0.5 rounded text-sm font-mono" {...props} />,
+              a: ({ ...props }) => <a className="text-primary hover:underline" {...props} />,
+              table: ({ ...props }) => <div className="overflow-x-auto my-6"><table className="w-full border-collapse border border-border" {...props} /></div>,
+              th: ({ ...props }) => <th className="border border-border p-2 bg-muted font-bold text-left" {...props} />,
+              td: ({ ...props }) => <td className="border border-border p-2 text-left" {...props} />,
+            }}
+          >
+            {siteConfig.legal?.privacy?.content || "# Privacy Policy\n\nContent not available."}
+          </ReactMarkdown>
         </article>
       </div>
     </div>

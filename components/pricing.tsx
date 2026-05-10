@@ -36,7 +36,7 @@ export function Pricing() {
           </div>
         </BlurFade>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
           {siteConfig.pricing.tiers.map((tier, idx) => (
             <BlurFade key={idx} inView delay={0.2 + idx * 0.1}>
               <MagicCard
@@ -55,9 +55,7 @@ export function Pricing() {
                     <h3 className="text-2xl font-bold mb-2">{tier.name}</h3>
                     <div className="flex items-baseline gap-1">
                       <span className="text-4xl font-bold">{tier.price}</span>
-                      {tier.price !== "Custom" && (
-                        <span className="text-muted-foreground">/month</span>
-                      )}
+                        <span className="text-muted-foreground"> one time purchase</span>
                     </div>
                     <p className="text-muted-foreground mt-4 leading-relaxed">
                       {tier.description}

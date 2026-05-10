@@ -14,8 +14,8 @@ const fontMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-  title: "Lumina | Premium Mobile App Landing Page",
-  description: "A high-performance, design-forward mobile app launch template built with Next.js 15 and Magic UI.",
+  title: "CoPlay | Watch & listen together",
+  description: "The perfect music experience for friends, where everyone gets a turn at the queue.",
 }
 
 export default function RootLayout({

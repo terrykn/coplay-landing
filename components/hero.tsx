@@ -19,7 +19,7 @@ export function Hero() {
         <BlurFade delay={0.05}>
           {siteConfig.appIcon && (
             <Backlight className="mb-4 mx-auto">
-              <div className="relative h-18 w-18 md:h-22 md:w-22 overflow-hidden rounded-[25%] border border-muted shadow-2xl">
+              <div className="relative h-18 w-18 md:h-22 md:w-22 overflow-hidden rounded-[25%]">
                 <Image
                   src={siteConfig.appIcon}
                   alt={`${siteConfig.name} Icon`}
@@ -33,7 +33,7 @@ export function Hero() {
 
         <BlurFade delay={0.1}>
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tighter max-w-4xl">
-            <AuroraText>{siteConfig.hero.headline}</AuroraText>
+            <AuroraText colors={["#9B1632", "#EA1F48", "#FF5E7E", "#ff116c"]}>{siteConfig.hero.headline}</AuroraText>
           </h1>
         </BlurFade>
 
@@ -76,10 +76,11 @@ export function Hero() {
             </div>
             {siteConfig.hero.showCount === "waitlist" && (
               <p className="text-sm text-muted-foreground">
+                Join {" "}
                 <span className="font-bold text-foreground">
-                  <NumberTicker value={siteConfig.hero.waitlistCount} />
+                  <NumberTicker value={siteConfig.hero.waitlistCount} />+
                 </span>{" "}
-                people already waiting
+                music lovers already on our waitlist
               </p>
             )}
             {siteConfig.hero.showCount === "users" && (

@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { ChevronLeft } from "lucide-react";
 import { siteConfig } from "@/lib/site-config";
+import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
 
 export default function TermsPage() {
   return (
@@ -11,39 +13,27 @@ export default function TermsPage() {
           <span>Back to Home</span>
         </Link>
         
-        <article className="prose prose-invert lg:prose-xl">
-          <h1 className="text-4xl font-bold mb-8">Terms of Service</h1>
-          <p className="text-muted-foreground">Last updated: May 9, 2026</p>
-          
-          <section className="space-y-4">
-            <h2 className="text-2xl font-bold mt-8">1. Acceptance of Terms</h2>
-            <p>By using the {siteConfig.name} application or website, you agree to these Terms of Service. If you do not agree, please do not use our services.</p>
-          </section>
-
-          <section className="space-y-4">
-            <h2 className="text-2xl font-bold mt-8">2. Use of Service</h2>
-            <p>You are responsible for any content you create within {siteConfig.name}. You must not use the service for any illegal or unauthorized purposes. For collaborative features, you agree to respect the privacy and data of other participants.</p>
-          </section>
-
-          <section className="space-y-4">
-            <h2 className="text-2xl font-bold mt-8">3. Syncing and Third-Party Services</h2>
-            <p>{siteConfig.name} relies on third-party services like iCloud for data synchronization. We are not responsible for any service interruptions or data loss caused by these third-party providers.</p>
-          </section>
-
-          <section className="space-y-4">
-            <h2 className="text-2xl font-bold mt-8">4. Intellectual Property</h2>
-            <p>All software, designs, and brand assets associated with {siteConfig.name} are the exclusive property of {siteConfig.name} Inc. and its licensors.</p>
-          </section>
-
-          <section className="space-y-4">
-            <h2 className="text-2xl font-bold mt-8">5. Termination</h2>
-            <p>We reserve the right to suspend or terminate your access to the service at any time, without notice, for conduct that we believe violates these terms or is harmful to other users.</p>
-          </section>
-
-          <section className="space-y-4">
-            <h2 className="text-2xl font-bold mt-8">6. Changes to Terms</h2>
-            <p>We may update these terms from time to time. Your continued use of the service after such changes constitutes your acceptance of the new terms.</p>
-          </section>
+        <article className="max-w-none">
+          <ReactMarkdown
+            remarkPlugins={[remarkGfm]}
+            components={{
+              h1: ({ ...props }) => <h1 className="text-4xl font-bold mb-8 text-foreground" {...props} />,
+              h2: ({ ...props }) => <h2 className="text-2xl font-bold mt-12 mb-4 text-foreground border-b pb-2" {...props} />,
+              h3: ({ ...props }) => <h3 className="text-xl font-bold mt-8 mb-3 text-foreground" {...props} />,
+              p: ({ ...props }) => <p className="text-muted-foreground leading-relaxed mb-4" {...props} />,
+              ul: ({ ...props }) => <ul className="list-disc pl-6 mb-4 space-y-2 text-muted-foreground" {...props} />,
+              ol: ({ ...props }) => <ol className="list-decimal pl-6 mb-4 space-y-2 text-muted-foreground" {...props} />,
+              li: ({ ...props }) => <li {...props} />,
+              blockquote: ({ ...props }) => <blockquote className="border-l-4 border-primary pl-4 italic my-4 text-muted-foreground" {...props} />,
+              code: ({ ...props }) => <code className="bg-muted px-1.5 py-0.5 rounded text-sm font-mono" {...props} />,
+              a: ({ ...props }) => <a className="text-primary hover:underline" {...props} />,
+              table: ({ ...props }) => <div className="overflow-x-auto my-6"><table className="w-full border-collapse border border-border" {...props} /></div>,
+              th: ({ ...props }) => <th className="border border-border p-2 bg-muted font-bold text-left" {...props} />,
+              td: ({ ...props }) => <td className="border border-border p-2 text-left" {...props} />,
+            }}
+          >
+            {siteConfig.legal?.terms?.content || "# Terms of Service\n\nContent not available."}
+          </ReactMarkdown>
         </article>
       </div>
     </div>
