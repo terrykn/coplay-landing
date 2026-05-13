@@ -100,13 +100,19 @@
       "title": "Terms of Service",
       "lastUpdated": "May 9, 2026",
       "content": "# Terms of Service\n\nLast updated: May 9, 2026\n\n## 1. Acceptance of Terms\nBy using the CoPlay application or website, you agree to these Terms of Service. If you do not agree, please do not use our services.\n\n## 2. Use of Service\nYou are responsible for any content you share or interactions you have within CoPlay. You must not use the service for any illegal or unauthorized purposes. For party features, you agree to behave respectfully towards other participants.\n\n## 3. Intellectual Property\nAll software, designs, and brand assets associated with CoPlay are the exclusive property of CoPlay and its licensors. You retain ownership of any playlists you create, but grant us a license to host and display them as part of the service.\n\n## 4. Third-Party Content\nCoPlay allows you to access content from third-party providers. We do not own this content and are not responsible for its availability or accuracy. You agree to comply with the terms of use of any third-party providers you access through our service.\n\n## 5. Termination\nWe reserve the right to suspend or terminate your access to the service at any time, without notice, for conduct that we believe violates these terms or is harmful to other users or our business interests.\n\n## 6. Disclaimer of Warranties\nThe service is provided \"as is\" without any warranties of any kind. We do not guarantee that the service will be uninterrupted or error-free.\n\n## 7. Changes to Terms\nWe may update these terms from time to time. Your continued use of the service after such changes constitutes your acceptance of the new terms."
+    },
+    "deleteAccount": {
+      "title": "Delete Account",
+      "lastUpdated": "May 13, 2026",
+      "content": "# Delete Account\n\nIf you wish to delete your CoPlay account, you can do so directly within the app.\n\n## Steps to Delete Your Account\n\n1. **Log in** to your CoPlay account.\n2. Navigate to the **Library** tab.\n3. Click on **Settings** in the top corner.\n4. Select the **Delete Account** option from the menu and follow the prompts.\n\n## Data Retention\n\nUpon deleting your account, certain types of data are kept:\n- Music library\n- Saved albums\n- Search history"
     }
   },
   "footer": {
     "tagline": "Watch & listen together",
     "links": [
       { "label": "Privacy Policy", "href": "/privacy" },
-      { "label": "Terms of Service", "href": "/terms" }
+      { "label": "Terms of Service", "href": "/terms" },
+      { "label": "Delete Account", "href": "/delete-account" }
     ],
     "socials": [
       {
