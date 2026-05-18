@@ -36,9 +36,9 @@
       },
       {
         "name": "Pro",
-        "price": "$4.99",
+        "price": "$5.99",
         "description": "",
-        "features": ["Everything in Free", "No ads", "Parties with up to 32"],
+        "features": ["Everything in Free", "No ads", "Parties with up to 16"],
         "cta": "Go Pro",
         "highlighted": true
       }
