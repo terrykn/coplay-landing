@@ -14,8 +14,8 @@ const fontMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-  title: "CoPlay | Watch & listen together",
-  description: "The perfect music experience for friends, where everyone gets a turn at the queue.",
+  title: "CoPlay | Enjoy music together",
+  description: "Enjoy music together. Host parties and let your friends add their favorite tracks to the queue.",
 }
 
 export default function RootLayout({
