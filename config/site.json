@@ -6,8 +6,8 @@
     "text": "CoPlay"
   },
   "hero": {
-    "headline": "Watch & listen together",
-    "subheadline": "Free forever, no interruptions. The perfect music experience for friends, where everyone gets a turn at the queue.",
+    "headline": "Enjoy music together",
+    "subheadline": "No limits, no interruptions. Host parties and let your friends add their favorite tracks to the queue.",
     "cta": "Join Waitlist",
     "showWaitlist": true,
     "showApple": false,
@@ -77,6 +77,10 @@
     "title": "Frequently Asked Questions",
     "items": [
       {
+        "question": "What platforms are CoPlay available on?",
+        "answer": "We are releasing on both Android and iOS."
+      },
+      {
         "question": "Is CoPlay really free?",
         "answer": "Yes! CoPlay is free to use. We offer a Pro plan for users who want to host larger parties and enjoy an ad-free experience, but the core features will always be free."
       },
@@ -108,7 +112,7 @@
     }
   },
   "footer": {
-    "tagline": "Watch & listen together",
+    "tagline": "Enjoy music together",
     "links": [
       { "label": "Privacy Policy", "href": "/privacy" },
       { "label": "Terms of Service", "href": "/terms" },
